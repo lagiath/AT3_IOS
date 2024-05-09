@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02620E602BECFFD800B5DF67 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02620E5F2BECFFD800B5DF67 /* PlaceModel.swift */; };
 		02ABFA022BE8D58E007DB3E5 /* RestaurantData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ABFA012BE8D58E007DB3E5 /* RestaurantData.swift */; };
-		02ABFA042BE8D67B007DB3E5 /* RestaurantManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ABFA032BE8D67B007DB3E5 /* RestaurantManager.swift */; };
+		02ABFA042BE8D67B007DB3E5 /* PlaceSearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ABFA032BE8D67B007DB3E5 /* PlaceSearchManager.swift */; };
 		02ABFA082BE8D844007DB3E5 /* FavouritesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ABFA072BE8D844007DB3E5 /* FavouritesModel.swift */; };
 		02ABFA4C2BE8F0A5007DB3E5 /* FavouritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ABFA4B2BE8F0A5007DB3E5 /* FavouritesView.swift */; };
 		02ABFA4E2BE8F0C9007DB3E5 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ABFA4D2BE8F0C9007DB3E5 /* SearchView.swift */; };
+		02B6B7042BECA2E800FA7A71 /* GooglePlacesPrivacy.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 02B6B7032BECA2E800FA7A71 /* GooglePlacesPrivacy.bundle */; };
+		02B6B7222BECED8300FA7A71 /* PlacesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B6B7212BECED8300FA7A71 /* PlacesListView.swift */; };
+		02B6B72E2BECF2D800FA7A71 /* GooglePlaces in Frameworks */ = {isa = PBXBuildFile; productRef = 02B6B72D2BECF2D800FA7A71 /* GooglePlaces */; };
 		C53BA76F2BE898FE0016F31C /* AT3_IOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53BA76E2BE898FE0016F31C /* AT3_IOSApp.swift */; };
 		C53BA7712BE898FE0016F31C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53BA7702BE898FE0016F31C /* ContentView.swift */; };
 		C53BA7732BE898FF0016F31C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C53BA7722BE898FF0016F31C /* Assets.xcassets */; };
@@ -19,11 +23,22 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02620E5F2BECFFD800B5DF67 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
 		02ABFA012BE8D58E007DB3E5 /* RestaurantData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantData.swift; sourceTree = "<group>"; };
-		02ABFA032BE8D67B007DB3E5 /* RestaurantManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantManager.swift; sourceTree = "<group>"; };
+		02ABFA032BE8D67B007DB3E5 /* PlaceSearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceSearchManager.swift; sourceTree = "<group>"; };
 		02ABFA072BE8D844007DB3E5 /* FavouritesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesModel.swift; sourceTree = "<group>"; };
 		02ABFA4B2BE8F0A5007DB3E5 /* FavouritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesView.swift; sourceTree = "<group>"; };
 		02ABFA4D2BE8F0C9007DB3E5 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		02B6B7032BECA2E800FA7A71 /* GooglePlacesPrivacy.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GooglePlacesPrivacy.bundle; sourceTree = "<group>"; };
+		02B6B7122BECE0BC00FA7A71 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		02B6B7142BECE0CA00FA7A71 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		02B6B7162BECE0DB00FA7A71 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		02B6B7182BECE0E800FA7A71 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		02B6B71A2BECE0F100FA7A71 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		02B6B71C2BECE0F900FA7A71 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		02B6B7212BECED8300FA7A71 /* PlacesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesListView.swift; sourceTree = "<group>"; };
+		02B6B7262BECF24300FA7A71 /* GooglePlaces.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GooglePlaces.xcframework; sourceTree = "<group>"; };
+		02B6B72A2BECF29C00FA7A71 /* GooglePlaces.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GooglePlaces.xcframework; path = Pods/GooglePlaces/Frameworks/GooglePlaces.xcframework; sourceTree = "<group>"; };
 		C53BA76B2BE898FE0016F31C /* AT3_IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AT3_IOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C53BA76E2BE898FE0016F31C /* AT3_IOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AT3_IOSApp.swift; sourceTree = "<group>"; };
 		C53BA7702BE898FE0016F31C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,17 +51,43 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02B6B72E2BECF2D800FA7A71 /* GooglePlaces in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		552959AEFB4D4F9B830514AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02B6B72A2BECF29C00FA7A71 /* GooglePlaces.xcframework */,
+				02B6B7262BECF24300FA7A71 /* GooglePlaces.xcframework */,
+				02B6B71C2BECE0F900FA7A71 /* UIKit.framework */,
+				02B6B71A2BECE0F100FA7A71 /* QuartzCore.framework */,
+				02B6B7182BECE0E800FA7A71 /* libz.tbd */,
+				02B6B7162BECE0DB00FA7A71 /* libc++.tbd */,
+				02B6B7142BECE0CA00FA7A71 /* CoreLocation.framework */,
+				02B6B7122BECE0BC00FA7A71 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6583E41E3EA666FABCA5EC6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C53BA7622BE898FE0016F31C = {
 			isa = PBXGroup;
 			children = (
+				02B6B7032BECA2E800FA7A71 /* GooglePlacesPrivacy.bundle */,
 				C53BA76D2BE898FE0016F31C /* AT3_IOS */,
 				C53BA76C2BE898FE0016F31C /* Products */,
+				B6583E41E3EA666FABCA5EC6 /* Pods */,
+				552959AEFB4D4F9B830514AA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,7 +108,9 @@
 				02ABFA072BE8D844007DB3E5 /* FavouritesModel.swift */,
 				02ABFA4B2BE8F0A5007DB3E5 /* FavouritesView.swift */,
 				02ABFA4D2BE8F0C9007DB3E5 /* SearchView.swift */,
-				02ABFA032BE8D67B007DB3E5 /* RestaurantManager.swift */,
+				02ABFA032BE8D67B007DB3E5 /* PlaceSearchManager.swift */,
+				02620E5F2BECFFD800B5DF67 /* PlaceModel.swift */,
+				02B6B7212BECED8300FA7A71 /* PlacesListView.swift */,
 				C53BA7722BE898FF0016F31C /* Assets.xcassets */,
 				C53BA7742BE898FF0016F31C /* Preview Content */,
 			);
@@ -98,6 +141,9 @@
 			dependencies = (
 			);
 			name = AT3_IOS;
+			packageProductDependencies = (
+				02B6B72D2BECF2D800FA7A71 /* GooglePlaces */,
+			);
 			productName = AT3_IOS;
 			productReference = C53BA76B2BE898FE0016F31C /* AT3_IOS.app */;
 			productType = "com.apple.product-type.application";
@@ -126,6 +172,9 @@
 				Base,
 			);
 			mainGroup = C53BA7622BE898FE0016F31C;
+			packageReferences = (
+				02B6B72C2BECF2D800FA7A71 /* XCRemoteSwiftPackageReference "ios-places-sdk" */,
+			);
 			productRefGroup = C53BA76C2BE898FE0016F31C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -142,6 +191,7 @@
 			files = (
 				C53BA7762BE898FF0016F31C /* Preview Assets.xcassets in Resources */,
 				C53BA7732BE898FF0016F31C /* Assets.xcassets in Resources */,
+				02B6B7042BECA2E800FA7A71 /* GooglePlacesPrivacy.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,10 +204,12 @@
 			files = (
 				C53BA7712BE898FE0016F31C /* ContentView.swift in Sources */,
 				02ABFA022BE8D58E007DB3E5 /* RestaurantData.swift in Sources */,
-				02ABFA042BE8D67B007DB3E5 /* RestaurantManager.swift in Sources */,
+				02ABFA042BE8D67B007DB3E5 /* PlaceSearchManager.swift in Sources */,
 				02ABFA4E2BE8F0C9007DB3E5 /* SearchView.swift in Sources */,
 				C53BA76F2BE898FE0016F31C /* AT3_IOSApp.swift in Sources */,
 				02ABFA4C2BE8F0A5007DB3E5 /* FavouritesView.swift in Sources */,
+				02B6B7222BECED8300FA7A71 /* PlacesListView.swift in Sources */,
+				02620E602BECFFD800B5DF67 /* PlaceModel.swift in Sources */,
 				02ABFA082BE8D844007DB3E5 /* FavouritesModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,11 +269,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -274,10 +327,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
@@ -366,6 +420,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		02B6B72C2BECF2D800FA7A71 /* XCRemoteSwiftPackageReference "ios-places-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googlemaps/ios-places-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		02B6B72D2BECF2D800FA7A71 /* GooglePlaces */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02B6B72C2BECF2D800FA7A71 /* XCRemoteSwiftPackageReference "ios-places-sdk" */;
+			productName = GooglePlaces;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C53BA7632BE898FE0016F31C /* Project object */;
 }

@@ -19,25 +19,19 @@ struct SearchView: View {
                     .cornerRadius(10)
                     .padding()
 
-                Button("Search") {
-                    // Action to perform search
-                    performSearch()
+                NavigationLink(destination: PlacesListView(searchTerm: searchText)) {
+                    Text("Search")
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(Color.blue)
+                        .cornerRadius(8)
                 }
-                .padding()
-                .foregroundColor(.white)
-                .background(Color.blue)
-                .cornerRadius(8)
                 .padding()
 
                 Spacer()
             }
             .navigationTitle("Find a Restaurant")
         }
-    }
-    
-    private func performSearch() {
-        // search logic here
-        print("Searching for \(searchText)")
     }
 }
 
