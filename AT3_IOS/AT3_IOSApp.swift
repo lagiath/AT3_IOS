@@ -13,7 +13,7 @@ struct YourAppName: App {
 
     init() {
         // Configure the Google Places client
-        GMSPlacesClient.provideAPIKey("AIzaSyA-NiR_MQrq4HEGhoqU_vSCz4E6w2vvsg0")
+        GMSPlacesClient.provideAPIKey("")
     }
 
     var body: some Scene {

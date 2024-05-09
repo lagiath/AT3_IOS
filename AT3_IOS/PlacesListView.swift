@@ -34,7 +34,7 @@ struct PlacesListView: View {
             DispatchQueue.main.async {
                 switch result {
                 case .success(let places):
-                    self.places = places  // Ensure that fetchedPlaces is [Place]
+                    self.places = places  
                 case .failure(let error):
                     print("Error fetching places: \(error)")
                 }

@@ -23,15 +23,11 @@ class PlaceSearchManager: NSObject {
             GMSPlaceProperty.website.rawValue
         ]
 
-        // Create request with desired properties
         let request = GMSPlaceSearchByTextRequest(
             textQuery: searchText,
             placeProperties: placeProperties
         )
-        
-        // Optional: Setting a location bias if needed
-        request.locationBias = GMSPlaceCircularLocationOption(
-            CLLocationCoordinate2DMake(37.4220604, -122.087809), 1000.0)
+
         
         // Define the callback
         let callback: GMSPlaceSearchByTextResultCallback = { [weak self] results, error in
