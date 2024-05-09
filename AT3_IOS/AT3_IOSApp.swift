@@ -6,9 +6,15 @@
 //
 
 import SwiftUI
+import GooglePlaces
 
 @main
 struct AT3_IOSApp: App {
+
+    init() {
+        GMSPlacesClient.provideAPIKey("")
+    }
+
     var body: some Scene {
         WindowGroup {
             ContentView()
