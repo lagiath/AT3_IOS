@@ -9,32 +9,54 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Text("App Name Goes Here")
-                .font(.largeTitle)
-                .padding()
+        NavigationView {
+            
+            VStack {
+                Text("App Name Goes Here")
+                    .font(.largeTitle)
+                    .padding()
+                
+                Spacer()
+                
+                NavigationLink(
+                    destination: SearchView(),
+                    label: {
+                        HStack{
+                            Image(systemName: "magnifyingglass")
+                                .foregroundColor(.white)
+                            
+                            Text("Search Near By Places")
+                            
+                                .foregroundColor(.white)
+                        }
+                        .padding()
 
-            Spacer()
+                            .background(Color.green)
+                            .cornerRadius(8)
+                            
+                    })
+                NavigationLink(
+                    destination: FavouritesView(favouritesModel: FavouritesModel()),
+                    label: {
+                        HStack{
+                            Image(systemName: "suit.heart.fill")
+                                .foregroundColor(.white)
+                            
+                            Text("Favourite Places")
+                            
+                                .foregroundColor(.white)
+                        }
+                        .padding()
 
-            Button("Search for nearby food") {
-                // Action for searching nearby food
-                print("Search for nearby food tapped")
+                            .background(Color.green)
+                            .cornerRadius(8)
+                            
+                    })
+                
+               
+                
+                Spacer()
             }
-            .padding()
-            .foregroundColor(.white)
-            .background(Color.blue)
-            .cornerRadius(8)
-
-            Button("Favorite Restaurants") {
-                // Action for showing favorite restaurants
-                print("Favorite Restaurants tapped")
-            }
-            .padding()
-            .foregroundColor(.white)
-            .background(Color.green)
-            .cornerRadius(8)
-
-            Spacer()
         }
     }
 }
