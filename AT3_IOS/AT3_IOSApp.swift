@@ -9,10 +9,9 @@ import SwiftUI
 import GooglePlaces
 
 @main
-struct YourAppName: App {
+struct AT3_IOSApp: App {
 
     init() {
-        // Configure the Google Places client
         GMSPlacesClient.provideAPIKey("")
     }
 
