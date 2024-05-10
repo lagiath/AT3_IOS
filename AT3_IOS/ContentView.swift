@@ -16,6 +16,7 @@ struct ContentView: View {
                     .font(.largeTitle)
                     .padding()
 
+
                 Spacer()
                 
                 // This links to the search functionality
@@ -27,6 +28,7 @@ struct ContentView: View {
                         .cornerRadius(8)
                 }
                 .padding()
+
                 
                 // This links to the favourites list 
                 NavigationLink(destination: FavouritesView()) {
@@ -36,14 +38,58 @@ struct ContentView: View {
                         .background(Color.green)
                         .cornerRadius(8)
                 }
+
                 .padding()
 
                 Spacer()
             }
             .navigationTitle("Main Menu")
+
+                
+                Spacer()
+                
+                NavigationLink(
+                    destination: SearchView(),
+                    label: {
+                        HStack{
+                            Image(systemName: "magnifyingglass")
+                                .foregroundColor(.white)
+                            
+                            Text("Search Near By Places")
+                            
+                                .foregroundColor(.white)
+                        }
+                        .padding()
+
+                            .background(Color.green)
+                            .cornerRadius(8)
+                            
+                    })
+                NavigationLink(
+                    destination: FavouritesView(favouritesModel: FavouritesModel()),
+                    label: {
+                        HStack{
+                            Image(systemName: "suit.heart.fill")
+                                .foregroundColor(.white)
+                            
+                            Text("Favourite Places")
+                            
+                                .foregroundColor(.white)
+                        }
+                        .padding()
+
+                            .background(Color.green)
+                            .cornerRadius(8)
+                            
+                    })
+                
+               
+                
+                Spacer()
+          }
         }
     }
-}
+
 
 
 #Preview {
