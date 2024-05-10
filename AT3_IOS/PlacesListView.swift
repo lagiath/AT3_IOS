@@ -2,46 +2,19 @@
 //  PlacesListView.swift
 //  AT3_IOS
 //
-//  Created by Aiden Hemaridis-smith on 9/5/2024.
+//  Created by Aiden Hemaridis-smith on 10/5/2024.
 //
-
 import SwiftUI
 
 struct PlacesListView: View {
-    @State var places: [Place] = []  // Changed to [Place]
-    var searchTerm: String
-    
-    var body: some View {
-        NavigationView {
-            List(places, id: \.id) { place in
-                VStack(alignment: .leading) {
-                    Text(place.name)
-                        .font(.headline)
-                    Text(place.address)
-                        .font(.subheadline)
-                    Text("Rating: \(place.rating)/5")
-                }
-            }
-            .navigationTitle("Search Results")
-            .onAppear {
-                loadPlaces()
-            }
-        }
-    }
+    var places: [Place]
 
-    func loadPlaces() {
-        PlaceSearchManager().searchPlaces(searchText: searchTerm) { result in
-            DispatchQueue.main.async {
-                switch result {
-                case .success(let places):
-                    self.places = places  
-                case .failure(let error):
-                    print("Error fetching places: \(error)")
-                }
+    var body: some View {
+        // Takes you to the detailed page with all the information and photos
+        List(places, id: \.id) { place in
+            NavigationLink(destination: PlaceDetailView(place: place)) {
+                Text(place.name)
             }
         }
     }
-}
-#Preview {
-    PlacesListView(places: [], searchTerm: "")
 }

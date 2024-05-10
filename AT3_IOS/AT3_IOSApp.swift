@@ -10,7 +10,8 @@ import GooglePlaces
 
 @main
 struct AT3_IOSApp: App {
-
+    let favouritesModel = FavouritesModel()
+    // Paste the API key that I sent in the group chat here or the app wont function at all
     init() {
         GMSPlacesClient.provideAPIKey("")
     }
@@ -18,6 +19,7 @@ struct AT3_IOSApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(favouritesModel)
         }
     }
 }

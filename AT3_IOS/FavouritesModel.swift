@@ -6,19 +6,19 @@
 //
 
 import Foundation
-// model to add users favourite restaurants to list
 
 class FavouritesModel: ObservableObject {
-    @Published var favouriteRestaurants: [String] = [] //Store placeIDs
+    @Published var favouriteRestaurants: [Place] = []
     
-    func addFavourite(name: String) {
-        if !favouriteRestaurants.contains(name) {
-            favouriteRestaurants.append(name)
+    // adds favourite restaurants to the list
+    func addFavourite(place: Place) {
+        if !favouriteRestaurants.contains(where: { $0.id == place.id }) {
+            favouriteRestaurants.append(place)
         }
     }
-    
-    func removeFavourite(name: String) {
-        favouriteRestaurants.removeAll { $0 == name }
+    // removes them
+    func removeFavourite(placeId: String) {
+        favouriteRestaurants.removeAll { $0.id == placeId }
     }
 }
 

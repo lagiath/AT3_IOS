@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		02620E602BECFFD800B5DF67 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02620E5F2BECFFD800B5DF67 /* PlaceModel.swift */; };
-		02ABFA022BE8D58E007DB3E5 /* RestaurantData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ABFA012BE8D58E007DB3E5 /* RestaurantData.swift */; };
-		02ABFA042BE8D67B007DB3E5 /* PlaceSearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ABFA032BE8D67B007DB3E5 /* PlaceSearchManager.swift */; };
+		02620E622BEDB85300B5DF67 /* PlacesSearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02620E612BEDB85300B5DF67 /* PlacesSearchManager.swift */; };
+		02620E682BEDDD1A00B5DF67 /* PlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02620E672BEDDD1A00B5DF67 /* PlaceView.swift */; };
+		02620E6A2BEDDD7700B5DF67 /* PlacesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02620E692BEDDD7700B5DF67 /* PlacesListView.swift */; };
+		02620E6C2BEDE53500B5DF67 /* PlaceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02620E6B2BEDE53500B5DF67 /* PlaceDetailView.swift */; };
+		02620E6E2BEDEC0000B5DF67 /* PlacePhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02620E6D2BEDEC0000B5DF67 /* PlacePhotoView.swift */; };
+		02620E702BEE033900B5DF67 /* ReviewFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02620E6F2BEE033900B5DF67 /* ReviewFormView.swift */; };
+		02ABFA042BE8D67B007DB3E5 /* TextSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ABFA032BE8D67B007DB3E5 /* TextSearchView.swift */; };
 		02ABFA082BE8D844007DB3E5 /* FavouritesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ABFA072BE8D844007DB3E5 /* FavouritesModel.swift */; };
 		02ABFA4C2BE8F0A5007DB3E5 /* FavouritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ABFA4B2BE8F0A5007DB3E5 /* FavouritesView.swift */; };
-		02ABFA4E2BE8F0C9007DB3E5 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ABFA4D2BE8F0C9007DB3E5 /* SearchView.swift */; };
 		02B6B7042BECA2E800FA7A71 /* GooglePlacesPrivacy.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 02B6B7032BECA2E800FA7A71 /* GooglePlacesPrivacy.bundle */; };
-		02B6B7222BECED8300FA7A71 /* PlacesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B6B7212BECED8300FA7A71 /* PlacesListView.swift */; };
 		02B6B72E2BECF2D800FA7A71 /* GooglePlaces in Frameworks */ = {isa = PBXBuildFile; productRef = 02B6B72D2BECF2D800FA7A71 /* GooglePlaces */; };
 		C53BA76F2BE898FE0016F31C /* AT3_IOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53BA76E2BE898FE0016F31C /* AT3_IOSApp.swift */; };
 		C53BA7712BE898FE0016F31C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53BA7702BE898FE0016F31C /* ContentView.swift */; };
@@ -24,11 +27,15 @@
 
 /* Begin PBXFileReference section */
 		02620E5F2BECFFD800B5DF67 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
-		02ABFA012BE8D58E007DB3E5 /* RestaurantData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantData.swift; sourceTree = "<group>"; };
-		02ABFA032BE8D67B007DB3E5 /* PlaceSearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceSearchManager.swift; sourceTree = "<group>"; };
+		02620E612BEDB85300B5DF67 /* PlacesSearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesSearchManager.swift; sourceTree = "<group>"; };
+		02620E672BEDDD1A00B5DF67 /* PlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceView.swift; sourceTree = "<group>"; };
+		02620E692BEDDD7700B5DF67 /* PlacesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesListView.swift; sourceTree = "<group>"; };
+		02620E6B2BEDE53500B5DF67 /* PlaceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailView.swift; sourceTree = "<group>"; };
+		02620E6D2BEDEC0000B5DF67 /* PlacePhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacePhotoView.swift; sourceTree = "<group>"; };
+		02620E6F2BEE033900B5DF67 /* ReviewFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewFormView.swift; sourceTree = "<group>"; };
+		02ABFA032BE8D67B007DB3E5 /* TextSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSearchView.swift; sourceTree = "<group>"; };
 		02ABFA072BE8D844007DB3E5 /* FavouritesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesModel.swift; sourceTree = "<group>"; };
 		02ABFA4B2BE8F0A5007DB3E5 /* FavouritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesView.swift; sourceTree = "<group>"; };
-		02ABFA4D2BE8F0C9007DB3E5 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		02B6B7032BECA2E800FA7A71 /* GooglePlacesPrivacy.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GooglePlacesPrivacy.bundle; sourceTree = "<group>"; };
 		02B6B7122BECE0BC00FA7A71 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		02B6B7142BECE0CA00FA7A71 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -36,7 +43,6 @@
 		02B6B7182BECE0E800FA7A71 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		02B6B71A2BECE0F100FA7A71 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		02B6B71C2BECE0F900FA7A71 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		02B6B7212BECED8300FA7A71 /* PlacesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesListView.swift; sourceTree = "<group>"; };
 		02B6B7262BECF24300FA7A71 /* GooglePlaces.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GooglePlaces.xcframework; sourceTree = "<group>"; };
 		02B6B72A2BECF29C00FA7A71 /* GooglePlaces.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GooglePlaces.xcframework; path = Pods/GooglePlaces/Frameworks/GooglePlaces.xcframework; sourceTree = "<group>"; };
 		C53BA76B2BE898FE0016F31C /* AT3_IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AT3_IOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,13 +110,16 @@
 			children = (
 				C53BA76E2BE898FE0016F31C /* AT3_IOSApp.swift */,
 				C53BA7702BE898FE0016F31C /* ContentView.swift */,
-				02ABFA012BE8D58E007DB3E5 /* RestaurantData.swift */,
 				02ABFA072BE8D844007DB3E5 /* FavouritesModel.swift */,
 				02ABFA4B2BE8F0A5007DB3E5 /* FavouritesView.swift */,
-				02ABFA4D2BE8F0C9007DB3E5 /* SearchView.swift */,
-				02ABFA032BE8D67B007DB3E5 /* PlaceSearchManager.swift */,
+				02ABFA032BE8D67B007DB3E5 /* TextSearchView.swift */,
+				02620E672BEDDD1A00B5DF67 /* PlaceView.swift */,
+				02620E692BEDDD7700B5DF67 /* PlacesListView.swift */,
+				02620E6B2BEDE53500B5DF67 /* PlaceDetailView.swift */,
+				02620E612BEDB85300B5DF67 /* PlacesSearchManager.swift */,
 				02620E5F2BECFFD800B5DF67 /* PlaceModel.swift */,
-				02B6B7212BECED8300FA7A71 /* PlacesListView.swift */,
+				02620E6F2BEE033900B5DF67 /* ReviewFormView.swift */,
+				02620E6D2BEDEC0000B5DF67 /* PlacePhotoView.swift */,
 				C53BA7722BE898FF0016F31C /* Assets.xcassets */,
 				C53BA7742BE898FF0016F31C /* Preview Content */,
 			);
@@ -203,12 +212,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				C53BA7712BE898FE0016F31C /* ContentView.swift in Sources */,
-				02ABFA022BE8D58E007DB3E5 /* RestaurantData.swift in Sources */,
-				02ABFA042BE8D67B007DB3E5 /* PlaceSearchManager.swift in Sources */,
-				02ABFA4E2BE8F0C9007DB3E5 /* SearchView.swift in Sources */,
+				02620E622BEDB85300B5DF67 /* PlacesSearchManager.swift in Sources */,
+				02620E682BEDDD1A00B5DF67 /* PlaceView.swift in Sources */,
+				02620E6A2BEDDD7700B5DF67 /* PlacesListView.swift in Sources */,
+				02620E6E2BEDEC0000B5DF67 /* PlacePhotoView.swift in Sources */,
+				02ABFA042BE8D67B007DB3E5 /* TextSearchView.swift in Sources */,
 				C53BA76F2BE898FE0016F31C /* AT3_IOSApp.swift in Sources */,
+				02620E6C2BEDE53500B5DF67 /* PlaceDetailView.swift in Sources */,
+				02620E702BEE033900B5DF67 /* ReviewFormView.swift in Sources */,
 				02ABFA4C2BE8F0A5007DB3E5 /* FavouritesView.swift in Sources */,
-				02B6B7222BECED8300FA7A71 /* PlacesListView.swift in Sources */,
 				02620E602BECFFD800B5DF67 /* PlaceModel.swift in Sources */,
 				02ABFA082BE8D844007DB3E5 /* FavouritesModel.swift in Sources */,
 			);
