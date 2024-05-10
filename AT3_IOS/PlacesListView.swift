@@ -10,6 +10,7 @@ import SwiftUI
 struct PlacesListView: View {
     @State var places: [Place] = []  // Changed to [Place]
     var searchTerm: String
+    @State private var selectedPlace: Place? = nil
     
     var body: some View {
         NavigationView {
@@ -21,8 +22,14 @@ struct PlacesListView: View {
                         .font(.subheadline)
                     Text("Rating: \(place.rating)/5")
                 }
+                .onTapGesture {
+                    selectedPlace = place
+                }
             }
             .navigationTitle("Search Results")
+            .sheet(item: $selectedPlace) { place in
+                RestaurantDetailView(restaurant: place)
+            }
             .onAppear {
                 loadPlaces()
             }

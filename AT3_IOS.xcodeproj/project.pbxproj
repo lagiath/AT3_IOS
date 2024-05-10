@@ -16,6 +16,7 @@
 		02B6B7042BECA2E800FA7A71 /* GooglePlacesPrivacy.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 02B6B7032BECA2E800FA7A71 /* GooglePlacesPrivacy.bundle */; };
 		02B6B7222BECED8300FA7A71 /* PlacesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B6B7212BECED8300FA7A71 /* PlacesListView.swift */; };
 		02B6B72E2BECF2D800FA7A71 /* GooglePlaces in Frameworks */ = {isa = PBXBuildFile; productRef = 02B6B72D2BECF2D800FA7A71 /* GooglePlaces */; };
+		C50D98762BEDB28700A4F283 /* RestaurantDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50D98752BEDB28700A4F283 /* RestaurantDetailView.swift */; };
 		C53BA76F2BE898FE0016F31C /* AT3_IOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53BA76E2BE898FE0016F31C /* AT3_IOSApp.swift */; };
 		C53BA7712BE898FE0016F31C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53BA7702BE898FE0016F31C /* ContentView.swift */; };
 		C53BA7732BE898FF0016F31C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C53BA7722BE898FF0016F31C /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 		02B6B7212BECED8300FA7A71 /* PlacesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesListView.swift; sourceTree = "<group>"; };
 		02B6B7262BECF24300FA7A71 /* GooglePlaces.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GooglePlaces.xcframework; sourceTree = "<group>"; };
 		02B6B72A2BECF29C00FA7A71 /* GooglePlaces.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GooglePlaces.xcframework; path = Pods/GooglePlaces/Frameworks/GooglePlaces.xcframework; sourceTree = "<group>"; };
+		C50D98752BEDB28700A4F283 /* RestaurantDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailView.swift; sourceTree = "<group>"; };
 		C53BA76B2BE898FE0016F31C /* AT3_IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AT3_IOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C53BA76E2BE898FE0016F31C /* AT3_IOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AT3_IOSApp.swift; sourceTree = "<group>"; };
 		C53BA7702BE898FE0016F31C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				02ABFA032BE8D67B007DB3E5 /* PlaceSearchManager.swift */,
 				02620E5F2BECFFD800B5DF67 /* PlaceModel.swift */,
 				02B6B7212BECED8300FA7A71 /* PlacesListView.swift */,
+				C50D98752BEDB28700A4F283 /* RestaurantDetailView.swift */,
 				C53BA7722BE898FF0016F31C /* Assets.xcassets */,
 				C53BA7742BE898FF0016F31C /* Preview Content */,
 			);
@@ -208,6 +211,7 @@
 				02ABFA4E2BE8F0C9007DB3E5 /* SearchView.swift in Sources */,
 				C53BA76F2BE898FE0016F31C /* AT3_IOSApp.swift in Sources */,
 				02ABFA4C2BE8F0A5007DB3E5 /* FavouritesView.swift in Sources */,
+				C50D98762BEDB28700A4F283 /* RestaurantDetailView.swift in Sources */,
 				02B6B7222BECED8300FA7A71 /* PlacesListView.swift in Sources */,
 				02620E602BECFFD800B5DF67 /* PlaceModel.swift in Sources */,
 				02ABFA082BE8D844007DB3E5 /* FavouritesModel.swift in Sources */,

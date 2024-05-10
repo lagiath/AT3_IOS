@@ -38,7 +38,7 @@ struct ContentView: View {
                 Spacer()
             }
             .navigationTitle("Main Menu")
-=======
+//=======
                 
                 Spacer()
                 
@@ -83,7 +83,7 @@ struct ContentView: View {
           }
         }
     }
-}
+
 
 
 #Preview {
