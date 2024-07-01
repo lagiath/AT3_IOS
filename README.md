@@ -9,3 +9,10 @@ Search Restaurants: Find restaurants within a 10km radius based on queries like 
 View Details: Display a photo of the place, its rating, opening hours, name, and address.
 Leave Reviews and Ratings: Users can add their own reviews and ratings for restaurants.
 Set Favorite Restaurants: Mark restaurants as favorites for easy access.
+
+Demo - 
+
+
+https://github.com/lagiath/iOS-Restaurant-App/assets/84719438/b69dfd7f-6e39-45d9-8804-0393722a6cab
+
+
